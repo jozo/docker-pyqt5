@@ -8,6 +8,8 @@ https://github.com/fadawar/docker-pyqt5
 https://hub.docker.com/r/fadawar/docker-pyqt5/
 
 ## How to use
+You can clone github repository and then run this command to check if it's working
+
 **Run**
 ```
 docker run -it \
