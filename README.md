@@ -1,5 +1,5 @@
 # docker-pyqt5
-Dockerfile for develop GUI application with Python 3 + PyQt5
+Dockerfile for development GUI application with Python 3 + PyQt5
 
 Tested on Ubuntu 16.04
 
@@ -7,12 +7,7 @@ https://github.com/fadawar/docker-pyqt5
 
 https://hub.docker.com/r/fadawar/docker-pyqt5/
 
-## Hot to use
-**Build**
-```
-docker build -t fadawar/pyqt5 .
-```
-
+## How to use
 **Run**
 ```
 docker run -it \
@@ -20,7 +15,12 @@ docker run -it \
     -v $(pwd)/test:/app \
     -e DISPLAY=$DISPLAY \
     -u myusername \
-    fadawar/pyqt5 python3 /app/hello.py
+    fadawar/docker-pyqt5 python3 /app/hello.py
+```
+
+**Build**
+```
+docker build -t fadawar/pyqt5 .
 ```
 
 ## Other Dockerfiles
