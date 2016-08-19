@@ -1,4 +1,6 @@
 # docker-pyqt5
+[![](https://images.microbadger.com/badges/image/fadawar/docker-pyqt5.svg)](https://microbadger.com/images/fadawar/docker-pyqt5 "Get your own image badge on microbadger.com")
+
 Dockerfile for development GUI application with Python 3 + PyQt5
 
 Tested on Ubuntu 16.04
