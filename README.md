@@ -18,9 +18,13 @@ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v $(pwd)/test:/app \
     -e DISPLAY=$DISPLAY \
-    -u myusername \
+    -u qtuser \
     fadawar/docker-pyqt5 python3 /app/hello.py
 ```
+
+You should see window similar to this:
+
+![Screenshot](example-screenshot.png)
 
 **Build**
 ```
