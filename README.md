@@ -3,7 +3,7 @@
 
 Dockerfile for development GUI application with Python 3 + PyQt5
 
-Tested on Ubuntu 16.04
+Tested on Ubuntu 16.04, 16.10
 
 https://github.com/fadawar/docker-pyqt5
 
