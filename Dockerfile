@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 MAINTAINER fadawar <fadawar@gmail.com>
 
@@ -6,7 +6,7 @@ MAINTAINER fadawar <fadawar@gmail.com>
 RUN adduser --quiet --disabled-password qtuser
 
 # Install Python 3, PyQt5
-RUN apt-get update
-RUN apt-get install -y \
-        python3 \
-        python3-pyqt5
+RUN apt-get update \
+    && apt-get install -y \
+      python3 \
+      python3-pyqt5

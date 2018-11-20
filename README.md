@@ -1,16 +1,16 @@
 # docker-pyqt5
 [![](https://images.microbadger.com/badges/image/fadawar/docker-pyqt5.svg)](https://microbadger.com/images/fadawar/docker-pyqt5 "Get your own image badge on microbadger.com")
 
-Dockerfile for development GUI application with Python 3 + PyQt5
+Dockerfile for development of GUI applications with Python 3 + PyQt5
 
-Tested on Ubuntu 16.04, 16.10
+Tested on Ubuntu 16.04, 16.10, 18.10
 
-https://github.com/fadawar/docker-pyqt5
+https://github.com/jozo/docker-pyqt5
 
 https://hub.docker.com/r/fadawar/docker-pyqt5/
 
-## How to use
-You can clone github repository and then run this command to check if it's working
+## How to use it
+You can **clone** this github repository and then run this command to check if it's working
 
 **Run**
 ```
@@ -33,10 +33,10 @@ docker build -t fadawar/pyqt5 .
 
 ## Other Dockerfiles
 **Python 3 + PyQt5:**
-https://github.com/fadawar/docker-pyqt5
+https://github.com/jozo/docker-pyqt5
  
 **Python 3 + PyQt5 + QML:**
-https://github.com/fadawar/docker-pyqt5-qml
+https://github.com/jozo/docker-pyqt5-qml
 
 **Python 3 + PyQt5 + QML + QtMultimedia:**
-https://github.com/fadawar/docker-pyqt5-qml-qtmultimedia
+https://github.com/jozo/docker-pyqt5-qml-qtmultimedia
