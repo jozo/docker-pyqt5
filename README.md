@@ -3,33 +3,30 @@
 
 Dockerfile for development of GUI applications with Python 3 + PyQt5
 
-Tested on Ubuntu 16.04, 16.10, 18.10
 
-https://github.com/jozo/docker-pyqt5
+Tested on Ubuntu 20.04
 
-https://hub.docker.com/r/fadawar/docker-pyqt5/
+**Links**: [GitHub repo](https://github.com/jozo/docker-pyqt5), [Docker Hub](https://hub.docker.com/r/fadawar/docker-pyqt5/)
 
 ## How to use it
-You can **clone** this github repository and then run this command to check if it's working
+*Note*: You have to have installed X11 on your machine. It's installed by default on Linux.
+On Mac and Windows you have to install it. Check [this issue](https://github.com/jozo/docker-pyqt5/issues/2).
 
-**Run**
+You can test if everything works with the small testing app included in this 
+docker image. You can try it with:
+
 ```
 docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v $(pwd)/test:/app \
     -e DISPLAY=$DISPLAY \
     -u qtuser \
-    fadawar/docker-pyqt5 python3 /app/hello.py
+    fadawar/docker-pyqt5 python3 /tmp/hello.py
 ```
 
-You should see window similar to this:
+You should see a window similar to this:
 
 ![Screenshot](example-screenshot.png)
 
-**Build**
-```
-docker build -t fadawar/pyqt5 .
-```
 
 ## Other Dockerfiles
 **Python 3 + PyQt5:**
@@ -40,3 +37,8 @@ https://github.com/jozo/docker-pyqt5-qml
 
 **Python 3 + PyQt5 + QML + QtMultimedia:**
 https://github.com/jozo/docker-pyqt5-qml-qtmultimedia
+
+**Build locally**
+```
+docker build -t fadawar/pyqt5 .
+```

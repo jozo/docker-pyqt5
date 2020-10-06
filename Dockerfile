@@ -1,12 +1,11 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-MAINTAINER fadawar <fadawar@gmail.com>
+MAINTAINER jozo <hi@jozo.io>
 
 # Add user
 RUN adduser --quiet --disabled-password qtuser
 
+COPY test/hello.py /tmp/hello.py
+
 # Install Python 3, PyQt5
-RUN apt-get update \
-    && apt-get install -y \
-      python3 \
-      python3-pyqt5
+RUN apt-get update && apt-get install -y python3-pyqt5
