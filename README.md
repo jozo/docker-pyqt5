@@ -1,12 +1,12 @@
 # docker-pyqt5
-[![](https://images.microbadger.com/badges/image/fadawar/docker-pyqt5.svg)](https://microbadger.com/images/fadawar/docker-pyqt5 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/jozo/pyqt5.svg)](https://microbadger.com/images/jozo/pyqt5 "Get your own image badge on microbadger.com")
 
 Dockerfile for development of GUI applications with Python 3 + PyQt5
 
 
 Tested on Ubuntu 20.04
 
-**Links**: [GitHub repo](https://github.com/jozo/docker-pyqt5), [Docker Hub](https://hub.docker.com/r/fadawar/docker-pyqt5/)
+**Links**: [GitHub repo](https://github.com/jozo/docker-pyqt5), [Docker Hub](https://hub.docker.com/r/jozo/docker-pyqt5/)
 
 ## How to use it
 *Note*: You have to have installed X11 on your machine. It's installed by default on Linux.
@@ -20,7 +20,7 @@ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY \
     -u qtuser \
-    fadawar/docker-pyqt5 python3 /tmp/hello.py
+    jozo/pyqt5 python3 /tmp/hello.py
 ```
 
 You should see a window similar to this:
