@@ -6,7 +6,7 @@ Dockerfile for development of GUI applications with Python 3 + PyQt5
 
 Tested on Ubuntu 20.04
 
-**Links**: [GitHub repo](https://github.com/jozo/docker-pyqt5), [Docker Hub](https://hub.docker.com/r/jozo/docker-pyqt5/)
+**Links**: [GitHub repo](https://github.com/jozo/docker-pyqt5), [Docker Hub](https://hub.docker.com/r/jozo/pyqt5)
 
 ## How to use it
 *Note*: You have to have installed X11 on your machine. It's installed by default on Linux.
