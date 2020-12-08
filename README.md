@@ -8,15 +8,12 @@ Tested on Ubuntu 20.04
 
 **Links**: [GitHub repo](https://github.com/jozo/docker-pyqt5), [Docker Hub](https://hub.docker.com/r/jozo/pyqt5)
 
-## How to use it
-*Note*: You have to have installed X11 on your machine. It's installed by default on Linux.
-On Mac and Windows you have to install it. Check [this issue](https://github.com/jozo/docker-pyqt5/issues/2).
-
+## How to use it on Linux
 You can test if everything works with the small testing app included in this 
 docker image. You can try it with:
 
 ```
-docker run -it \
+docker run --rm -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY \
     -u qtuser \
@@ -26,6 +23,26 @@ docker run -it \
 You should see a window similar to this:
 
 ![Screenshot](example-screenshot.png)
+
+## How to use it on MacOS
+1. Install [XQuartz](https://www.xquartz.org).
+2. In XQuartz: Check the option: XQuartz -> Preferences -> Security -> "Allow connections from network clients"
+3. Run in terminal:
+```
+IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+xhost +
+```
+
+You can test if everything works with the small testing app included in this
+docker image. You can try it with:
+
+```
+docker run --rm -it \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -e DISPLAY=$IP:0 \
+    -u qtuser \
+    jozo/pyqt5 python3 /tmp/hello.py
+```
 
 
 ## Other Dockerfiles
