@@ -25,7 +25,7 @@ You should see a window similar to this:
 ![Screenshot](example-screenshot.png)
 
 ## How to use it on MacOS
-1. Install [XQuartz](https://www.xquartz.org).
+1. Install [XQuartz](https://www.xquartz.org). Restart OS.
 2. In XQuartz: Check the option: XQuartz -> Preferences -> Security -> "Allow connections from network clients"
 3. Run in terminal:
 ```
