@@ -3,7 +3,7 @@ FROM jozo/pyqt5
 MAINTAINER jozo <hi@jozo.io>
 
 # Install additional PyQt5 packages
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
     python3-pyqt5.qtopengl \
     python3-pyqt5.qtquick \
     python3-pyqt5.qtmultimedia \
