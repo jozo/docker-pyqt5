@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     python3-pyqt5.qtmultimedia \
     # Install Qml
     qmlscene \
-    qml-module-* \
+#    qml-module-* \
     # Install Gstreamer
     gstreamer1.0-libav \
     gstreamer1.0-plugins-bad \
