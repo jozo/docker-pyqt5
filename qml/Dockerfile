@@ -28,6 +28,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     qml-module-qtmultimedia \
     qml-module-qtpositioning \
     # Libraries for multimedia
+    libqt5multimedia5 \
     gstreamer1.0-libav \
     gstreamer1.0-plugins-bad \
     gstreamer1.0-plugins-base \
