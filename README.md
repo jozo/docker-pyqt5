@@ -4,11 +4,15 @@
 Dockerfile for development of GUI applications with Python 3 + PyQt5
 
 
-Tested on Ubuntu 20.04
-
 **Links**: [GitHub repo](https://github.com/jozo/docker-pyqt5), [Docker Hub](https://hub.docker.com/r/jozo/pyqt5)
 
+### Supported tags
+* `latest`, `1.0`
+* `qml`, `qml-1.0` - Add additional libraries for working with QML (bigger image size)
+
 ## How to use it on Linux
+*Tested on Ubuntu 20.04*
+
 You can test if everything works with the small testing app included in this 
 docker image. You can try it with:
 
