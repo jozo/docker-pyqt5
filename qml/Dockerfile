@@ -2,6 +2,9 @@ FROM jozo/pyqt5
 
 MAINTAINER jozo <hi@jozo.io>
 
+# To fix: QGLXContext: Failed to create dummy context
+ENV QT_QUICK_BACKEND=software
+
 # Install additional PyQt5 packages
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     python3-pyqt5.qtopengl \
