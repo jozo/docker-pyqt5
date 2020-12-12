@@ -26,7 +26,15 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     qml-module-qtgstreamer \
     qml-module-qtlocation \
     qml-module-qtmultimedia \
-    qml-module-qtpositioning
-
+    qml-module-qtpositioning \
+    # Libraries for multimedia
+    gstreamer1.0-libav \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-base-apps \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-ugly \
+    alsa-base \
+    alsa-utils
 
 COPY hello.* /tmp/

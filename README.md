@@ -47,19 +47,3 @@ docker run --rm -it \
     -u qtuser \
     jozo/pyqt5 python3 /tmp/hello.py
 ```
-
-
-## Other Dockerfiles
-**Python 3 + PyQt5:**
-https://github.com/jozo/docker-pyqt5
- 
-**Python 3 + PyQt5 + QML:**
-https://github.com/jozo/docker-pyqt5-qml
-
-**Python 3 + PyQt5 + QML + QtMultimedia:**
-https://github.com/jozo/docker-pyqt5-qml-qtmultimedia
-
-**Build locally**
-```
-docker build -t fadawar/pyqt5 .
-```
