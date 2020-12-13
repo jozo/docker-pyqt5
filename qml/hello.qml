@@ -8,7 +8,7 @@ Rectangle {
 
     Text {
         anchors { horizontalCenter: parent.horizontalCenter }
-        text: "Click below to play video"
+        text: "Hello! Click below to play video"
     }
 
     Video {
