@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y \
     gstreamer1.0-plugins-good \
     gstreamer1.0-plugins-ugly \
     alsa-base \
-    alsa-utils
+    alsa-utils \
+    fonts-wqy-zenhei
 
 COPY hello.* /tmp/
